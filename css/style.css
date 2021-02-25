@@ -1,0 +1,74 @@
+:root {
+  --backgound-color: #3e3a36;
+  --nav-background-color: #2b2825;
+  --border-color: #8f2323;
+  --border-width: 0.4vh;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--backgound-color);
+    border: solid var(--border-width) var(--border-color);
+    display: flex;
+    flex-direction: row;
+    height: 99vh; /* For 100% screen height */
+
+}
+
+/* NAVBAR */
+
+.navbar{
+    width: 5.2vw;
+    background-color: var(--nav-background-color);
+    border-right: solid var(--border-width) var(--border-color);
+}
+
+.navbar .logo{
+    width: 100%;
+    height: 10vh;
+    border-bottom: solid var(--border-width) var(--border-color);
+}
+
+.navbar nav{
+    margin-top: 24vh;
+    margin-bottom: 25vh;
+}
+
+.navbar nav ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.navbar nav ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-top: solid var(--border-width) var(--border-color);
+
+    height: 10vh;
+}
+
+.navbar nav ul li:last-child{
+    border-bottom: solid var(--border-width) var(--border-color);
+}
+
+.navbar nav ul li img{
+    width: 4.6vh;
+    height: 4.6vh;
+}
+
+.navbar nav ul li.active img{
+    filter: invert(1);
+}
+
+/* END NAVBARD */
+
+
+/* CONTENT */
+
+.content{
+    width: 94.4vw;
+}
