@@ -58,9 +58,15 @@ body{
 .navbar nav ul li img{
     width: 4.6vh;
     height: 4.6vh;
+    transition: all 250ms ease-in-out;
 }
 
 .navbar nav ul li.active img{
+    filter: invert(1);
+}
+
+.navbar nav ul li img:hover{
+    cursor: pointer;
     filter: invert(1);
 }
 
