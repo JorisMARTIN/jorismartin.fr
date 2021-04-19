@@ -9,7 +9,7 @@
         <title>Joris MARTIN</title>
     </head>
 
-    <body>
+    <body onload="init()">
 
         <!-- NavBar -->
         <div class="navbar">
@@ -18,18 +18,40 @@
             </div>
             <nav>
                 <ul>
-                    <li class="active"><img src="img/nav/home.png" alt="Accueil" ></li>
-                    <li><img src="img/nav/profile.png" alt="Profil"></li>
-                    <li><img src="img/nav/projects.png" alt="Projets"></li>
-                    <li><img src="img/nav/contact.png" alt="Contact"></li>
+                    <li id="homeIcon" class="active"><img src="img/nav/home.png" alt="Accueil" ></li>
+                    <li id="profileIcon"><img src="img/nav/profile.png" alt="Profil"></li>
+                    <li id="projectsIcon"><img src="img/nav/projects.png" alt="Projets"></li>
+                    <li id="contactIcon"><img src="img/nav/contact.png" alt="Contact"></li>
                 </ul>
             </nav>
         </div>
 
         <!-- Content -->
         <div class="content">
+            <section id="home">
+                <div>
+                    <img class="profilePicture globalBakgroundBorder" src="img/photo.jpg" alt="Photo">
+                    <button class="globalBakgroundBorder">Contactez-moi</button>
+                </div>
+                <p class="globalBakgroundBorder">Salut,<br>moi c'est Joris, et je suis étudiant<br>en informatique.</p>
+            </section>
 
+            <section id="profile">
+
+            </section>
+
+            <section id="projects">
+                
+            </section>
+
+            <section id="contact">
+                
+            </section>
         </div>
+
+
+        <script src="js/index.js"></script>
+
     </body>
 
 </html>

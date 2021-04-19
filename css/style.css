@@ -5,6 +5,12 @@
   --border-width: 0.4vh;
 }
 
+@font-face {
+    font-family: "SpaceMono";
+    src: url("fonts/spacemono_regular.ttf") format("truetype");
+}
+
+
 body{
     margin: 0;
     padding: 0;
@@ -14,6 +20,20 @@ body{
     flex-direction: row;
     height: 99vh; /* For 100% screen height */
 
+    font-family: "SpaceMono";
+    color: var(--border-color);
+
+}
+
+.globalBakgroundBorder{
+    border: solid var(--border-color) 4px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: var(--nav-background-color);
+    color: var(--border-color);
+
+    -webkit-box-shadow: 3px 3px 0px 0px var(--backgound-color), 10px 10px 0px 0px var(--border-color); 
+    box-shadow: 3px 3px 0px 0px var(--backgound-color), 10px 10px 0px 0px var(--border-color);
 }
 
 /* NAVBAR */
@@ -77,4 +97,37 @@ body{
 
 .content{
     width: 94.4vw;
+}
+
+/* HOME */
+
+#home{
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#home > div{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home > div .profilePicture{
+    width: 60%;
+    margin-bottom: 20%;
+}
+
+#home > div button{
+    width: 50%;
+    height: 3em;
+
+    font-size: 1.2em;
+}
+
+#home p{
+    padding: 1em;
+    margin-right: 10%;
 }
